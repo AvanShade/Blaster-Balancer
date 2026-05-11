@@ -1,3 +1,7 @@
+// Name: Seth Motta and Daniel Appleford
+// Purpose: Determine PWM and direction to be passed to motors
+// Help From: Dr. Gary Nave
+
 #include <Arduino.h>
 
 class Motor {
@@ -16,6 +20,7 @@ public:
   // Motor driver functions
   void run(float speed) {
     int pwm, reverse;
+
     if (speed >= 0) {
       reverse = 0;
       pwm = int(speed);
@@ -23,7 +28,7 @@ public:
       reverse = 1;
       pwm = abs(int(speed));
     }
-    
+
     if (pwm > 255) {
       pwm = 255;
     }

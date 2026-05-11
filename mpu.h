@@ -1,3 +1,8 @@
+// Name: Seth Motta and Daniel Appleford
+// Purpose: Read Accelerometer, Temperature, and Gyroscope data from an MPU-6050
+// Help From: https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf
+
+
 #include <Arduino.h>
 #include <Wire.h>
 

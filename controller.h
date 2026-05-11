@@ -1,3 +1,6 @@
+// Name: Seth Motta and Daniel Appleford
+// Purpose: Simple PID controller for determining motor speed
+
 #include <Arduino.h>
 
 class Controller {
